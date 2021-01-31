@@ -7,7 +7,7 @@ En este ejemplo imprimiremos original y duplicado de un remito en una hoja A4.
 ## 1 creamos el formato del papel. 
 Es una hoja A4 pero sin margenes.
 
-<record id="paperformat_preimpreso" model="report.paperformat">
+	<record id="paperformat_preimpreso" model="report.paperformat">
 			<field name="name">preimpreso</field>
 			<field eval="False" name="default"/>
 			<field name="format">A4</field>
@@ -19,14 +19,14 @@ Es una hoja A4 pero sin margenes.
 			<field eval="False" name="header_line"/>
 			<field name="header_spacing">0</field>
 			<field name="dpi">72</field>
-</record>
+	</record>
 
 ## 2 Creo la plantilla y corto la cantidad de lineas
 La linea **t-foreach="[o.move_lines[i:i+15] for i in range(0,len(o.move_lines),15)]"**  divide las lineas del remito en grupos de 15. 
 Los grupos de lineas estan dentro de la variable **chunk_lines**
 
 
-<template id="report_preimpreso">
+	<template id="report_preimpreso">
 			<t t-call="report.html_container">
 				<t t-as="o" t-foreach="docs">
 					<t t-as="chunk_lines" t-foreach="[o.move_lines[i:i+15] for i in range(0,len(o.move_lines),15)]">
@@ -34,13 +34,13 @@ Los grupos de lineas estan dentro de la variable **chunk_lines**
 					</t>
 				</t>
 			</t>
-</template>
+	</template>
     
 
 ## 3 creo un template que contiene las dos copias de  remito
 Solamente si necesito imprimir dos copias en la misma hoja
 
-<template id="report_preimpreso_pages">
+	<template id="report_preimpreso_pages">
 			<div class="page" style="zoom:1.25;font-size:0.8em;">
 				<div style="width:100%;height:148mm; position:absolute;">
 					<t t-call="ba_warehouse.report_preimpreso_internal"/>
@@ -49,7 +49,7 @@ Solamente si necesito imprimir dos copias en la misma hoja
 					<t t-call="ba_warehouse.report_preimpreso_internal"/>
 				</div>
 			</div>
-</template>
+	</template>
  
  ## 4 Creo el diseño interno
  Cada elemento ubica un campo en una ubicacion en centimetros. Esto lo hacemos un poco a prueba y error porque **wkhtmltopdf** puede estar configurado a distintas resoluciones.
