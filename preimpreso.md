@@ -72,13 +72,12 @@ Solamente si necesito imprimir dos copias en la misma hoja
 			</div>
 			<div style="width:160mm;position:absolute; left:25mm;top:130mm;height:10mm; overflow:hidden;" t-field="o.note"/>
 		</template>
-   
-   ** 5 registro el reporte y le asigno el tamaño de pagina
+		
+## 5 registro el reporte y le asigno el tamaño de pagina
    	
     <report id="ba_report_preimpreso" model="stock.picking" name="stock.report_preimpreso" report_type="qweb-pdf" string="Preimpreso"/>
 		<record id="ba_report_preimpreso" model="ir.actions.report.xml">
 			<field name="paperformat_id" ref="paperformat_preimpreso"/>
 		</record>
    
-   
-   [Todo junto y en un solo archivo esta aca](https://gist.github.com/filoquin/d6f2c3e014a1269ec7bce555db561d71)
+[Todo junto y en un solo archivo esta aca](https://gist.github.com/filoquin/d6f2c3e014a1269ec7bce555db561d71)
