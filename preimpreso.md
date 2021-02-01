@@ -52,6 +52,7 @@ Solamente si necesito imprimir dos copias en la misma hoja
 	</template>
  
  ## 4 Creo el diseño interno
+ 
  Cada elemento ubica un campo en una ubicacion en centimetros. Esto lo hacemos un poco a prueba y error porque **wkhtmltopdf** puede estar configurado a distintas resoluciones.
     
      <template id="report_preimpreso_internal">
