@@ -5,18 +5,20 @@ Odoo no tiene una profunda documentacion. Para poder sobrevivir hay que saber le
 Ejemplo:
 Las imagenes en odoo tienen tamaños preconfigurados. 64px, 128px ,256px etc. 
 
-Como resolver cuando nos piden. 
-Quiero que el alto maximo sea de 6Cm en pantalla y el ancho asi masomenos. 
-**Tradución: que tenga un ancho de 256px pero un alto maximo de 128px.**
+Como resolvemos cuando nos dicen. 
 
-Podemos generar un campo nuevo de binario con la imagne con las caracteristicas requeridas. 
+> Quiero que el alto maximo sea de 6Cm en pantalla y el ancho asi mas o menos. 
+
+**Tradución: que tenga un ancho maximo de 256px y un alto maximo de 128px aunque las imagenes sean verticales.**
+
+Una posibilidad seria crear un campo binario para imagen con las caracteristicas requeridas. 
 Pero no es la unica solucion. Con una vista tambien podemos hacerlo
 
-El widget de imagen tiene un atributo **options** un diccionario donde puedo definir el campo de la imagen a mostrar preview_image y size donde defino los tributos width, height y max-with max height de la imagen mediante un array [alto,ancho*.
+El widget de imagen tiene un atributo **options** un diccionario donde puedo definir el campo de la imagen a mostrar **preview_image** y **size** donde defino los tributos width, height y max-with, max-height de la imagen mediante un array [alto,ancho].
 
-Si definieramos size como [256, 180] deformariamos las images que tengam otros ratios de tamaño.
+Si definieramos size como [256, 180] deformariamos las images que tengam otros ratios de tamaño, por ejemplo las verticales.
 
-Pero si leemos el codigo, vemos que evalua el ancho y el largo por separados. Si definimos el ancho como False entonces el ancho sera el propio de la imagen.
+Pero si leemos el codigo, vemos que evalua el ancho y el largo por separados. Si definimos el ancho como False entonces el ancho se acomodara al alto.
 
 ```javascript
         var width = this.nodeOptions.size ? this.nodeOptions.size[0] : this.attrs.width;
