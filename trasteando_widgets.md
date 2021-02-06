@@ -1,5 +1,7 @@
 # Manipulando el widget de imagenes
 
+![Algo asi](regla.jpeg)
+
 Odoo no tiene una documentación profunda. Para poder sobrevivir hay que saber leer código.
 
 Por ejemplo:
