@@ -1,6 +1,6 @@
 # Manipulando el widget de imagenes
 
-Odoo no tiene una documentación profunda. Para poder sobrevivir hay que saber leer codigo.
+Odoo no tiene una documentación profunda. Para poder sobrevivir hay que saber leer código.
 
 Por ejemplo:
 Las imagenes en odoo tienen tamaños preconfigurados. 64px, 128px ,256px etc. 
