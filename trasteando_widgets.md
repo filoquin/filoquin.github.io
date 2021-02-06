@@ -7,7 +7,7 @@ Las imagenes en odoo tienen tamaños preconfigurados. 64px, 128px ,256px etc.
 
 Como resolvemos cuando nos dicen. 
 
-> Quiero que el alto maximo sea de 6zm en pantalla y el ancho asi mas o menos. 
+> Quiero que el alto maximo sea de 6cm en pantalla y el ancho asi mas o menos. 
 
 **Tradución: que tenga un ancho maximo de 256px y un alto maximo de 128px aunque las imagenes sean verticales.**
 
