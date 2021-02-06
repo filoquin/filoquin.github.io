@@ -18,7 +18,7 @@ Pero no es la unica solucion. Con una vista tambien podemos hacerlo
 
 El widget de imagen tiene un atributo **options** un diccionario donde puedo definir el campo de la imagen a mostrar **preview_image** y **size** donde defino los tributos width, height y max-with, max-height de la imagen mediante un array [alto,ancho].
 
-Si definieramos size como [256, 180] deformariamos las images que tengam otros ratios de tamaño, por ejemplo las verticales.
+Si definieramos size como [256, 180] deformariamos las images que tengan otros ratios de tamaño, por ejemplo las verticales.
 
 Pero si leemos el codigo, vemos que evalua el ancho y el largo por separados. Si definimos el ancho como False entonces el ancho se acomodara al alto.
 
