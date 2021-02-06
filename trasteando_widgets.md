@@ -16,11 +16,13 @@ Como resolvemos cuando nos dicen.
 Una posibilidad seria crear un campo binario para imagen con las caracteristicas requeridas. 
 Pero no es la unica solucion. Con una vista tambien podemos hacerlo
 
-El widget de imagen tiene un atributo **options** un diccionario donde puedo definir el campo de la imagen a mostrar **preview_image** y **size** donde defino los tributos width, height y max-with, max-height de la imagen mediante un array [alto,ancho].
+El widget de imagen tiene un atributo **options** un diccionario donde puedo definir 
+- el campo de la imagen a mostrar **preview_image** 
+- y **size** donde defino los atributos width, height y max-with, max-height de la imagen mediante un array [alto,ancho].
 
-Si definieramos size como [256, 180] deformariamos las images que tengan otros ratios de tamaño, por ejemplo las verticales.
+Si definieramos size como [256, 180] deformariamos las images con otros ratios de tamaño, por ejemplo las verticales.
 
-Pero si leemos el codigo, vemos que evalua el ancho y el largo por separados. Si definimos el ancho como False entonces el ancho se acomodara al alto.
+Pero si leemos el codigo, observamos que evalua el ancho y el largo por separado. Si definimos el ancho como False entonces el ancho se acomodara al alto.
 
 ```javascript
         var width = this.nodeOptions.size ? this.nodeOptions.size[0] : this.attrs.width;
