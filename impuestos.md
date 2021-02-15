@@ -17,9 +17,9 @@ Y listo
 ## Pero...
 
 Si en nuestra configuración los **impuestos no estan incluidos en el precio**.
-Si agrego un producto de $100 me agregaria al total $120
+Al agregar un producto de $100 tendria un total $120
 
-Antes de agregar el producto tenemos que descontarle los impuestos.
+Por eso antes de agregar el producto tenemos que descontarle los impuestos.
 Si el valor es $100 el costo sin impuestos es aproximadamente $82,65.
 
 Por suerte algun programador penso en nosotros y dejo un flag en la función **compute_all** de **account.tax** para que resolvamos este problema.
