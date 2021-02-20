@@ -1,4 +1,4 @@
-#Crear patch desdeun PR
+# Crear patch desde un PR
 
 Me gusta git-aggregator para mantener la lista de dependencias y repositorios pero **para los gustos colores** ¿No?
 
