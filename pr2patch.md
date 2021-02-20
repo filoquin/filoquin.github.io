@@ -2,7 +2,7 @@
 
 Me gusta git-aggregator para mantener la lista de dependencias y repositorios pero **para los gustos colores** ¿No?
 
-Varias veces me preguntaron como mesclar un pr en miramaen produccion a la manera de los *Indiana Coders*
+Varias veces me preguntaron como mezclar un pr en produccion a la manera de los *Indiana Coders*
 Por ejemplo yo este repositorio clonado
 
 ```console
