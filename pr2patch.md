@@ -3,13 +3,12 @@
 Me gusta git-aggregator para mantener la lista de dependencias y repositorios pero **para los gustos colores** ¿No?
 
 Varias veces me preguntaron como mezclar un pr en produccion a la manera de los *Indiana Coders*
-Por tengo este repositorio clonado
+Por ejemplo yo tengo este repositorio clonado en mi server
 
 ```console
 git clone -b 13.0 https://github.com/ingadhoc/odoo-argentina-ce
 ```
-Y quiero aplicar el PR de QR que esta en esta URL. https://github.com/ingadhoc/odoo-argentina-ce/pull/17
-solo debo agregar al PR una extención .patch y guardar el archivo
+Y quiero aplicar el PR de QR que esta en esta URL. https://github.com/ingadhoc/odoo-argentina-ce/pull/17. Entonces solo debo agregar al PR una extención **.patch** y guardar el archivo
 ```console
 cd ~
 wget https://github.com/ingadhoc/odoo-argentina-ce/pull/17.patch
