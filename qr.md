@@ -10,11 +10,10 @@ odoo-argentina-ce:
         depth: 20
     remotes:
         origin: https://github.com/ingadhoc/odoo-argentina-ce.git
-        filoquin: git+ssh://git@github.com/ingadhoc/odoo-argentina-ce.git
     merges:
         - origin 13.0
         - origin refs/pull/17/head
-    target: filoquin 13.0_qr
+    target: origin 13.0_qr
 ```
 
 Ejecuto 
