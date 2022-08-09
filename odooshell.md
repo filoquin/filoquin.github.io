@@ -23,10 +23,16 @@ docker_id:~$ odoo shell - -no-http - d mi_db - c / opt/odoo/etc/odoo.conf - -db_
 # O simplemente 
 docker_id:~$ odoo shell -d nombre_base_datos
 ```
+
+# Manos a la obra.
 Una ves adentro trabajo como si fuera el usuario super_admin.
+
 Tengo disponibles todas las clases, objetos, modelos y datos, para transaccionar.  
+
 Cuando termino mi tarea, si quiero guardar los cambios, escribo self._cr.commit()
 
+
+# Un ejemplo.
 En este ejemplo, una migracion fallida, dejo todas las imagenes en el modelo product.image y no en el modelo product.template. 
 Yo quiero obtener la primer imagen por producto, insertarla en el modelo correcto y luego borrarla de product.image (para que no quede repetida)
 
