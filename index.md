@@ -1,5 +1,6 @@
 ## Memos para desMemoRiados
 Algunos recursos para odoo y su ecositema para tener a mano
+- [Odoo SHELL es tu amigo](odooshell.md)
 - [Corregir errores luego de un downgrade. psycopg2.ProgrammingError: type "you_table" already exists](downgrade.md)
 - [Instalar PR de QR con git aggregate](qr.md)
 - [Calcular impuesto inversos](impuestos.md)
